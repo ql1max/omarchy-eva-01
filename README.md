@@ -7,6 +7,8 @@ lifting off against a green grid.
 
 ![palette](assets/palette.png)
 
+![Eva 01 running on Omarchy](assets/screenshot.webp)
+
 ## Palette
 
 | Role             | Hex       |
