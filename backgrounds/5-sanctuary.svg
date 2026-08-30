@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.45" r="1.05">
+      <stop offset="0" stop-color="#191029"/>
+      <stop offset="0.55" stop-color="#0d0918"/>
+      <stop offset="1" stop-color="#06040c"/>
+    </radialGradient>
+    <radialGradient id="fade" cx="0.5" cy="0.45" r="0.8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.1"/>
+    </radialGradient>
+    <mask id="gridmask">
+      <rect width="2560" height="1440" fill="url(#fade)"/>
+    </mask>
+    <pattern id="hex" width="132" height="76.2" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#b45cff" stroke-width="2">
+        <path d="M 44 0 L 22 38.1 L -22 38.1 L -44 0 L -22 -38.1 L 22 -38.1 Z"/>
+        <path d="M 44 76.2 L 22 114.3 L -22 114.3 L -44 76.2 L -22 38.1 L 22 38.1 Z"/>
+        <path d="M 110 38.1 L 88 76.2 L 44 76.2 L 22 38.1 L 44 0 L 88 0 Z"/>
+      </g>
+    </pattern>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d8a8ff" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#a45cff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#a45cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8ff2c0" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#5ee6a0" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#5ee6a0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.5"/>
+    </radialGradient>
+    <filter id="hexblur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="orbblur" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+  </defs>
+
+  <rect width="2560" height="1440" fill="url(#bg)"/>
+
+  <!-- AT field, dreamt rather than deployed -->
+  <g mask="url(#gridmask)" filter="url(#hexblur)">
+    <rect width="2560" height="1440" fill="url(#hex)"/>
+  </g>
+
+  <!-- bokeh glows -->
+  <g filter="url(#orbblur)">
+    <circle cx="800" cy="520" r="330" fill="url(#glow1)"/>
+    <circle cx="1850" cy="950" r="420" fill="url(#glow1)"/>
+    <circle cx="2150" cy="300" r="240" fill="url(#glow2)"/>
+    <circle cx="420" cy="1150" r="260" fill="url(#glow2)" opacity="0.7"/>
+  </g>
+
+  <rect width="2560" height="1440" fill="url(#vignette)"/>
+</svg>

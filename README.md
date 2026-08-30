@@ -41,9 +41,11 @@ omarchy theme set eva-01
 - `backgrounds/`:
   - **01-eva01** — EVA-01 against a neon grid
     ([wallhaven 7286p3](https://wallhaven.cc/w/7286p3), resized to 2560×1440)
-  - **2-atfield** — an AT Field hexagonal lattice (original, SVG source included)
   - **1-magi** — the three Magi supercomputers as light beams (original, SVG source included)
+  - **2-atfield** — an AT Field hexagonal lattice (original, SVG source included)
   - **3-lcl** — the LCL sea under a fading glow (original, SVG source included)
+  - **4-descent** — a shaft of light descending into haze (original, SVG source included)
+  - **5-sanctuary** — an AT Field, dreamt: blurred hexes and bokeh glow (original, SVG source included)
 - `unlock.png` — dimmed lock-screen wallpaper
 - `hyprland.lua` — sharp neon violet borders, no glow/shadow
 - `shell.toml` — bar/launcher/notifications chrome; neon green second accent on
