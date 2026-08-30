@@ -4,7 +4,7 @@
 mode = "dark"
 
 accent = "#b45cff"
-selection = "#2c2144"
+selection = "#1e3a2a"  # dark neon-green tint — the second accent
 muted = "#4e4070"
 
 background = "#151021"

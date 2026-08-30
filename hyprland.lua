@@ -1,7 +1,5 @@
 local active_border_color = "rgb(b45cff)"
-local active_shadow_color = "rgb(8b3ff2)"
 local inactive_border_color = "rgba(6f619455)"
-local inactive_shadow_color = "rgba(6f619433)"
 
 hl.config({
   general = {
@@ -18,13 +16,5 @@ hl.config({
     },
   },
 
-  decoration = {
-    shadow = {
-      enabled = true,
-      range = 6,
-      render_power = 4,
-      color = active_shadow_color,
-      color_inactive = inactive_shadow_color,
-    },
-  },
+  -- Sharp: no glow, no shadow.
 })

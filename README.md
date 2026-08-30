@@ -45,7 +45,9 @@ omarchy theme set eva-01
   - **1-magi** — the three Magi supercomputers as light beams (original, SVG source included)
   - **3-lcl** — the LCL sea under a fading glow (original, SVG source included)
 - `unlock.png` — dimmed lock-screen wallpaper
-- `hyprland.lua` — neon violet borders with a soft purple shadow
+- `hyprland.lua` — sharp neon violet borders, no glow/shadow
+- `shell.toml` — bar/launcher/notifications chrome; neon green second accent on
+  selections and highlights, purple everywhere else
 - `neovim.lua` — [nightly.nvim](https://github.com/Alexis12119/nightly.nvim) (neon purple)
 - `vscode.json` — [Eva Theme](https://marketplace.visualstudio.com/items?itemName=fisheva.EVA-Theme)
 - `icons.theme` — Yaru Purple Dark
