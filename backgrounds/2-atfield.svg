@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <radialGradient id="bg" cx="0.38" cy="0.42" r="1.1">
+      <stop offset="0" stop-color="#160e28"/>
+      <stop offset="0.5" stop-color="#0c0818"/>
+      <stop offset="1" stop-color="#05030a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.38" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#7b2ff2" stop-opacity="0.28"/>
+      <stop offset="0.6" stop-color="#7b2ff2" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#7b2ff2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fade" cx="0.38" cy="0.42" r="0.85">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.15"/>
+    </radialGradient>
+    <mask id="gridmask">
+      <rect width="2560" height="1440" fill="url(#fade)"/>
+    </mask>
+    <pattern id="hex" width="132" height="76.2" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#a06bff" stroke-width="1.5">
+        <path d="M 44 0 L 22 38.1 L -22 38.1 L -44 0 L -22 -38.1 L 22 -38.1 Z"/>
+        <path d="M 44 76.2 L 22 114.3 L -22 114.3 L -44 76.2 L -22 38.1 L 22 38.1 Z"/>
+        <path d="M 110 38.1 L 88 76.2 L 44 76.2 L 22 38.1 L 44 0 L 88 0 Z"/>
+      </g>
+    </pattern>
+    <filter id="glowf" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.8">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.5"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2560" height="1440" fill="url(#bg)"/>
+  <rect width="2560" height="1440" fill="url(#glow)"/>
+
+  <!-- AT Field hex grid, faded from the focus point -->
+  <g mask="url(#gridmask)">
+    <rect width="2560" height="1440" fill="url(#hex)"/>
+  </g>
+
+  <!-- highlighted hexes -->
+  <g fill="none">
+    <g filter="url(#glowf)" stroke="#c07dff" stroke-width="6" opacity="0.6">
+      <path d="M 726 420 L 704 458.1 L 660 458.1 L 638 420 L 660 381.9 L 704 381.9 Z"/>
+      <path d="M 1702 972 L 1680 1010.1 L 1636 1010.1 L 1614 972 L 1636 933.9 L 1680 933.9 Z"/>
+    </g>
+    <path d="M 726 420 L 704 458.1 L 660 458.1 L 638 420 L 660 381.9 L 704 381.9 Z" stroke="#e9d1ff" stroke-width="2.5"/>
+    <path d="M 1702 972 L 1680 1010.1 L 1636 1010.1 L 1614 972 L 1636 933.9 L 1680 933.9 Z" stroke="#e9d1ff" stroke-width="2.5"/>
+  </g>
+
+  <rect width="2560" height="1440" fill="url(#vignette)"/>
+</svg>

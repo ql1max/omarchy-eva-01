@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08050f"/>
+      <stop offset="0.62" stop-color="#0c0817"/>
+      <stop offset="0.64" stop-color="#2b1554"/>
+      <stop offset="0.8" stop-color="#150c28"/>
+      <stop offset="1" stop-color="#080512"/>
+    </linearGradient>
+    <linearGradient id="horizonGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b45cff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#b45cff" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f2e6ff" stop-opacity="0.9"/>
+      <stop offset="0.25" stop-color="#d8b0ff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#b45cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur60" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="2560" height="1440" fill="url(#sea)"/>
+
+  <!-- LCL sea horizon -->
+  <rect x="0" y="880" width="2560" height="24" fill="#c084fc" opacity="0.35" filter="url(#blur60)"/>
+  <rect x="0" y="902" width="2560" height="2.5" fill="#dcbaff" opacity="0.5"/>
+
+  <!-- moon / lost glow above the sea -->
+  <circle cx="1280" cy="560" r="420" fill="url(#moon)" opacity="0.55"/>
+
+  <!-- reflection -->
+  <g opacity="0.2" filter="url(#blur60)">
+    <rect x="1060" y="906" width="440" height="260" fill="#b45cff"/>
+  </g>
+
+  <rect width="2560" height="1440" fill="url(#vignette)"/>
+</svg>

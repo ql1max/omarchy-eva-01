@@ -1,0 +1,34 @@
+# EVA-01 — a Neon Genesis Evangelion theme for Omarchy
+# Neon violet on deep purple-black. High-tech, polished, NERV-certified.
+
+mode = "dark"
+
+accent = "#b45cff"
+selection = "#2c2144"
+muted = "#4e4070"
+
+background = "#151021"
+dark_background = "#0f0b1a"
+darker_background = "#0a0714"
+lighter_background = "#251c3a"
+
+foreground = "#d4c8f0"
+dark_foreground = "#6f6194"
+light_foreground = "#bcabe6"
+bright_foreground = "#ece2ff"
+
+red = "#ff5c8a"
+yellow = "#ffd166"
+orange = "#ff9e64"
+green = "#5ee6a0"
+cyan = "#54d1ff"
+blue = "#8f7bff"
+magenta = "#d66bff"
+brown = "#5a4a52"
+
+bright_red = "#ff7ba3"
+bright_yellow = "#ffe08a"
+bright_green = "#8ff2c0"
+bright_cyan = "#8ae2ff"
+bright_blue = "#ab9dff"
+bright_magenta = "#e39bff"

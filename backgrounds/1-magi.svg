@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1128"/>
+      <stop offset="0.55" stop-color="#0d0918"/>
+      <stop offset="1" stop-color="#06040c"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b3ff2" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#a45cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b3ff2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d18cff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#e0a6ff" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#d18cff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="floor" cx="0.5" cy="1" r="0.9">
+      <stop offset="0" stop-color="#5b21b6" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#5b21b6" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#5b21b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="softer" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <rect width="2560" height="1440" fill="url(#sky)"/>
+
+  <!-- three Magi beams -->
+  <g filter="url(#softer)">
+    <rect x="560" y="120" width="160" height="1200" fill="url(#beam)"/>
+    <rect x="1200" y="60" width="160" height="1320" fill="url(#beamC)"/>
+    <rect x="1840" y="120" width="160" height="1200" fill="url(#beam)"/>
+  </g>
+  <g filter="url(#soft)">
+    <rect x="622" y="180" width="36" height="1080" fill="#c07dff" opacity="0.5"/>
+    <rect x="1262" y="120" width="36" height="1200" fill="#f0d6ff" opacity="0.55"/>
+    <rect x="1902" y="180" width="36" height="1080" fill="#c07dff" opacity="0.5"/>
+  </g>
+
+  <!-- floor glow -->
+  <rect width="2560" height="1440" fill="url(#floor)"/>
+
+  <!-- faint scanlines -->
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="1" fill="#ffffff" opacity="0.6"/>
+  </pattern>
+  <rect width="2560" height="1440" fill="url(#scan)" opacity="0.04"/>
+
+  <rect width="2560" height="1440" fill="url(#vignette)"/>
+</svg>
