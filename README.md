@@ -48,15 +48,17 @@ omarchy theme set eva-01
   - **3-lcl** — the LCL sea under a fading glow (original, SVG source included)
   - **4-descent** — a shaft of light descending into haze (original, SVG source included)
   - **5-sanctuary** — an AT Field, dreamt: blurred hexes and bokeh glow (original, SVG source included)
-- `unlock.png` — dimmed lock-screen wallpaper
-- `hyprland.lua` — sharp neon violet borders, no glow/shadow
+- `backgrounds/unlock.png` — dimmed lock-screen wallpaper
+- `preview.png` — desktop screenshot for the theme picker
 - `shell.toml` — bar/launcher/notifications chrome; neon green second accent on
   selections and highlights, purple everywhere else
-- `neovim.lua` — [nightly.nvim](https://github.com/Alexis12119/nightly.nvim) (neon purple)
-- `vscode.json` — [Eva Theme](https://marketplace.visualstudio.com/items?itemName=fisheva.EVA-Theme)
 - `icons.theme` — Yaru Purple Dark
 - `keyboard.rgb` — keyboard backlight `#b45cff`
 - `shell.lock.toml` — lock screen colors
+
+Omarchy generates Hyprland, Neovim, and VS Code configs from `colors.toml`.
+Repo-installed themes cannot supply `*.lua` or `vscode.json` overrides.
+Personal overrides belong in `~/.config/omarchy/themed/<file>.tpl`.
 
 ## Submitting to omarchy.org/themes
 
@@ -72,7 +74,7 @@ A PR there needs two things:
 
 2. A `<figure>` entry in `themes/index.html`, alphabetically ordered.
 
-Note: `01-eva01.png` is fan artwork sourced from wallhaven. If the original
+Note: `backgrounds/01-eva01.webp` is fan artwork sourced from wallhaven. If the original
 artist can be identified, credit them in the PR description.
 
 ## License
